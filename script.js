@@ -1,6 +1,20 @@
 function calculate() {
     const firstValue = document.getElementById('First Value').value
     const secondValue = document.getElementById('Second Value').value
-    const answer = (Number(firstValue) + Number(secondValue))
-    alert(answer)
+    const math = document.getElementById('math').value
+
+    switch (math) {
+        case "+":
+            answer.innerHTML = Number(firstValue) + Number(secondValue)
+            break;
+        case "-":
+            answer.innerHTML = Number(firstValue) - Number(secondValue)
+            break;
+        case "*":
+            answer.innerHTML = Number(firstValue) * Number(secondValue)
+            break;
+        case "/":
+            answer.innerHTML = Number(firstValue) / Number(secondValue)
+            break;
+    }
 }
